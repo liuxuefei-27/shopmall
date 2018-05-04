@@ -1,0 +1,163 @@
+.addressContent{
+  width:92%;
+  margin:0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.addressContent h2{
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 10px;
+}
+.addressBox{
+  width:100%;
+  display: flex;
+}
+.addressBox ul{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.addressBox ul li{
+  width:25%;
+  height:173px;
+  background-color: #fff;
+  border:2px solid #e9e9e9;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  margin-bottom: 10px;
+  display: flex;
+}
+.addressBox ul li:hover{
+  cursor: pointer;
+  border:2px solid orange;
+}
+.addressBox ul li .addressLeft{
+  width:80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  margin-left: 20px;
+}
+.addressBox ul li .addressRight{
+  width:20%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-bottom: 5px;
+}
+.addressBox ul li .addressRight .delStatus{
+  display: block;
+  width:30px;
+  height:30px;
+  background:url("./../../../static/del.jpg") no-repeat;
+}
+.addressBox ul li .addressRight .delStatus:hover{
+  background:url("./../../../static/del1.jpg") no-repeat;
+  cursor: pointer;
+}
+.addressBox .addAddress{
+  width:100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.6;
+}
+.addressBox .addAddress:hover{
+  border:2px solid orange;
+  cursor: pointer;
+}
+.goodsName,.methodName{
+  font-size: 20px;
+  opacity: 0.8;
+}
+.address{
+  opacity: 0.8;
+}
+.address,.orderId,.activeAddress,.defaultAddress,.methodInfo{
+  font-size: 14px;
+}
+.orderId,.defaultAddress,.methodInfo{
+  opacity: 0.6;
+}
+.activeAddress{
+  color: orange;
+}
+.activeAddress:hover,.defaultAddress:hover{
+  cursor: pointer;
+  color: orange;
+}
+.addAddressBtn{
+  font-size: 80px;
+}
+.addAddressBtn:hover{
+  cursor: pointer;
+  color: orange;
+}
+.shopMethod{
+  width:92%;
+  margin:0 auto;
+}
+.shopMethod h2{
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 50px;
+  text-align: left;
+  padding-left: 10px;
+}
+.shopMethod ul li{
+  width:25%;
+  height:173px;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  justify-content: space-around;
+  border:2px solid #e9e9e9;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+}
+.shopMethod ul li:hover{
+  border:2px solid orange;
+  cursor: pointer;
+}
+.methodPrice{
+  font-size: 16px;
+}
+.moreBtn{
+  display: block;
+  color: orange;
+  cursor: pointer;
+  text-align: center;
+  line-height: 40px;
+}
+.check{
+  border:2px solid orange!important;
+}
+.methodBox{
+  position: relative;
+}
+.nextBtn{
+  width:150px;
+  height:40px;
+  border:none;
+  background-color: rgb(209,67,74);
+  color: #fff;
+  position: absolute;
+  right:0;
+  bottom:0;
+}
+.nextBtn:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}

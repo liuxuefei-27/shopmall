@@ -1,0 +1,119 @@
+.cartContent{
+  width:92%;
+  margin:0 auto;
+}
+.cartContent h2{
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 50px;
+  text-align:left;
+  padding-left: 10px;
+}
+.cartContent th{
+  height:50px;
+  background-color: rgb(96,95,95);
+  color: #fff;
+}
+.cartContent td{
+  height:100px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #e9e9e9;
+}
+.cartContent tr td:nth-child(1){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.cartContent tr td:nth-child(1) .goodsCheck{
+  display: block;
+  width:15px;
+  height:15px;
+}
+.cartContent tr td:nth-child(1) .goodsCheck:hover{
+  cursor: pointer;
+}
+.cartContent tr td:nth-child(1) .goodsPic{
+  width:80px;
+  height:100px;
+}
+.cartContent tr td:nth-child(3){
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+}
+.cartContent tr td:nth-child(4),.totalPrice{
+  color: rgb(209,67,74);
+  font-size: 20px;
+}
+.goodsNum{
+  width:40px;
+  text-align: center;
+}
+.delBtn{
+  display: block;
+  width:30px;
+  height:30px;
+  background: url("./../../../static/del.jpg");
+  margin:0 auto;
+}
+.delBtn:hover{
+  background: url("./../../../static/del1.jpg");
+  cursor: pointer;
+}
+.reduceGoods:hover,.addGoods:hover{
+  cursor: pointer;
+}
+.allCartInfo{
+  width:100%;
+  height:50px;
+  background: #fff;
+  margin-top:10px;
+  border:1px solid #e9e9e9;
+  display: flex;
+}
+.leftSelectAll{
+  width:50%;
+  height:50px;
+  display: flex;
+  align-items: center;
+  color: rgba(0,0,0,0.6);
+}
+.rightCheckout{
+  width:50%;
+  height:50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(0,0,0,0.6);
+}
+.selectAll{
+  width:15px;
+  height:15px;
+}
+.selectAll:hover{
+  cursor: pointer;
+}
+.priceTotal{
+  width:60%;
+}
+.checkTxt{
+  font-size: 20px;
+}
+.checkOut{
+  width:40%;
+  height:50px;
+  border:none;
+  background: rgb(209,67,74);
+  color: #fff;
+}
+.checkOut:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}
+.btn-dis{
+  border:1px solid #ccc;
+  background-color: rgb(240,240,240);
+  color: #ccc;
+  cursor: default;
+}

@@ -1,0 +1,33 @@
+.orderConfirmation{
+  width:92%;
+  height:400px;
+  margin:0 auto;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.orderOk{
+  width:100px;
+  margin: 40px 0;
+}
+.orderConfirmation span{
+  line-height: 30px;
+  font-size: 18px;
+  opacity: 0.6;
+}
+.goBtn{
+  margin-top:20px;
+}
+.cartList,.goodsList{
+  font-size: 16px;
+  padding:10px 25px;
+  border:1px solid rgb(209,67,74);
+  background-color: #fff;
+  color: rgb(209,67,74);
+  font-weight: bold;
+}
+.cartList:hover,.goodsList:hover{
+  cursor: pointer;
+}

@@ -1,0 +1,206 @@
+@media screen and (max-width: 1440px) {
+  .mainContent{
+    width:92%;
+    margin:0 auto;
+    display: flex;
+    justify-content: space-around;
+  }
+  .mainLeft{
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    margin-top:10px;
+    background-color: #fff;
+  }
+  .mainLeft h2{
+    width:100%;
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    text-align: center;
+  }
+  .mainLeft section{
+    width:100%;
+  }
+  .mainLeft section ul{
+    width:100%;
+    height:100%;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .mainLeft section ul li{
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+    line-height: 60px;
+    border-bottom: 1px solid #e9e9e9;
+  }
+  .mainLeft section ul li:nth-child(1){
+    border-top: 2px solid #e9e9e9;
+  }
+  .mainLeft section ul li:hover{
+    cursor: pointer;
+  }
+  .mainRight{
+    width:80%;
+  }
+  .mainRight section ul{
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*justify-content: space-between;*/
+    margin-top:10px;
+  }
+  .clearFix:after{
+    content:'';
+    display:block;
+    height:0;
+    clear:both;
+    line-height: 0;
+  }
+  .mainRight section ul li{
+    height:350px;
+    width:25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border:2px solid #e9e9e9;
+    box-sizing: border-box;
+    float:left;
+  }
+  .mainRight section ul li img{
+    width:100%;
+    height:70%;
+  }
+  .goodsTitle,.goodsPrice{
+    font-size: 20px;
+    color: rgba(0,0,0,0.8);
+    line-height: 30px;
+  }
+  .addCart{
+    width:90%;
+    height:40px;
+    border:1px solid rgb(209,67,74);
+    background-color: #fff;
+    color:rgb(209,67,74);
+  }
+}
+@media screen and (max-width: 1128px){
+  .mainContent{
+    width:92%;
+    margin:0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .mainLeft{
+    display: none;
+  }
+  .mainRight{
+    width:100%;
+  }
+  .mainRight section ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .mainRight section ul li{
+    width:100%;
+    height:100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    box-sizing: border-box;
+    padding-right:10px;
+    background-color: #fff;
+  }
+  .mainRight section ul li img{
+    width:80px;
+    height:90px;
+  }
+  .goodsTitle,.goodsPrice{
+    font-size: 16px;
+    color: rgba(0,0,0,0.8);
+    line-height: 30px;
+    flex:1;
+  }
+  .addCart{
+    width:100px;
+    height:40px;
+    border:1px solid rgb(209,67,74);
+    background-color: #fff;
+    color:rgb(209,67,74);
+  }
+}
+.filterMenu{
+  width:92%;
+  height:50px;
+  background-color: #fff;
+  margin:0 auto;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.filter{
+  width:200px;
+  height:100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.curActive{
+  color: rgb(209,67,74)!important;
+  background-color: rgb(240,240,240);
+  border-left:2px solid rgb(209,67,74);
+}
+.mainRight section ul li:hover{
+  opacity:0.8;
+  border: 2px solid rgb(209,67,74);
+  transition:all 0.5s ease-out;
+  cursor:pointer;
+}
+.activeBtn,.goodsPrice{
+  color: rgb(209,67,74);
+}
+.addCart:hover{
+  cursor: pointer;
+}
+.overLay{
+  width:100%;
+  height:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  bottom:0;
+  z-index:99;
+  background-color: rgba(0,0,0,0.6);
+}
+.filterMenu{
+  position: relative;
+}
+@keyframes priceFilterMove{
+  from {right:-200px;}
+  to {right:0px;}
+}
+.priceFilter{
+  width:200px;
+  height:200px;
+  position: absolute;
+  top:50px;
+  right:0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #fff;
+  z-index:999;
+  animation:priceFilterMove 0.5s ease-out;
+  -webkit-animation:priceFilterMove 0.5s ease-out;
+  -moz-animation:priceFilterMove 0.5s ease-out;
+}
+.priceFilter section ul li{
+  line-height: 40px;
+  border-bottom: 1px solid #e9e9e9;
+}
+.priceFilter section ul li:hover{
+  cursor: pointer;
+}

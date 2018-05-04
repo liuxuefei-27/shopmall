@@ -1,0 +1,174 @@
+<!--基础样式-->
+*{
+  margin:0;
+  padding:0;
+  font-size: 12px;
+  font-family: "微软雅黑";
+}
+ul,ol{
+  list-style: none;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-padding-start: 0;
+}
+img,a img{
+  border:none;
+}
+a{
+  text-decoration: none;
+}
+body{
+  background-color: rgb(245,247,252);
+  margin:0;
+}
+/*头部样式*/
+.headerBox{
+  width:100%;
+  height:250px;
+}
+.headPic{
+  width:92%;
+  height:200px;
+  margin:0 auto;
+}
+.headPic img{
+  width:100%;
+  height:100%;
+}
+.navMenu{
+  width:92%;
+  height:50px;
+  background-color: rgb(240,240,240);
+  margin:0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+.navLocation{
+  width:300px;
+  height:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 10px;
+}
+.right_btn{
+  width:300px;
+  height:100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right:15px;
+}
+.right_btn a,.navLocation a,.labelText,footer{
+  color: rgba(0,0,0,0.6);
+  margin-left: 10px;
+}
+footer{
+  width:92%;
+  height:100px;
+  margin:0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e9e9e9;
+}
+.location,a:hover{
+  color: rgb(209,67,74);
+}
+.cartBox{
+  display: block;
+  width:40px;
+  height:28px;
+  position: relative;
+}
+.cartNum{
+  display: block;
+  width:15px;
+  height:15px;
+  background-color: rgb(209,67,74);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  color: #fff;
+  position: absolute;
+  top:0;
+  right:0;
+  font-size: 8px;
+}
+.overLay{
+  position: fixed;
+  width:100%;
+  height:100%;
+  top:0;
+  bottom:0;
+  left:0;
+  background-color: rgba(0,0,0,0.8);
+}
+@keyframes popOver{
+  0%{
+    opacity:0;
+    bottom:0%;
+  }
+  100%{
+    opacity:1;
+    bottom:35%;
+  }
+}
+.loginBox{
+  width:30%;
+  height:30%;
+  background-color: #fff;
+  position: fixed;
+  left:35%;
+  z-index:99;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  -webkit-animation: popOver 0.5s ease-in-out;
+  -o-animation: popOver 0.5s ease-in-out;
+  animation: popOver 0.5s ease-in-out;
+}
+.labelTxt{
+  margin-left: 5%;
+}
+.inputTxt{
+  width:90%;
+  height:25%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 5%;
+}
+.userName,.pwd{
+  width:100%;
+  height:50%;
+}
+.loginBtn{
+  width:90%;
+  height:15%;
+  align-self: center;
+  background-color: #00B7FF;
+  border:none;
+  color: #fff;
+}
+.loginBtn:hover{
+  cursor: pointer;
+  opacity: 0.8;
+}
+.closeBtn{
+  position: absolute;
+  top:5px;
+  right:10px;
+  opacity: 0.6;
+}
+.closeBtn:hover{
+  cursor: pointer;
+}
+.errorMsg{
+  font-size: 12px;
+  margin-left: 5%;
+  color: rgb(209,67,74);
+}

@@ -1,0 +1,101 @@
+.orderContent{
+  width:92%;
+  margin:0 auto;
+}
+.orderContent h2{
+  font-size: 16px;
+  opacity: 0.8;
+  line-height: 50px;
+  text-align: left;
+  padding-left:10px;
+}
+.orderContent th{
+  height:50px;
+  background-color: rgb(96,95,95);
+  color: #fff;
+}
+.orderContent td{
+  height:100px;
+  background-color: #fff;
+  text-align: center;
+  border-bottom: 1px solid #e9e9e9;
+  font-size: 20px;
+}
+.orderContent tr td:nth-child(1){
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.orderContent tr td:nth-child(1) .goodsPic{
+  width:80px;
+  height:100px;
+}
+.orderContent tr td:nth-child(3){
+  display: -ms-flexbox;
+  justify-content: center;
+  align-items: center;
+}
+.orderContent tr td:nth-child(4){
+  color: rgb(209,67,74);
+}
+.goodsNum1{
+  padding:5px 20px;
+  background-color: #e9e9e9;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+.orderInfo{
+  height:250px;
+  display: flex;
+  background-color: #fff;
+  margin-top:10px;
+}
+.orderInfoLeft{
+  width:60%;
+  height:100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left:10px;
+}
+.previousBtn{
+  padding:10px 20px;
+  border:1px solid rgb(209,67,74);
+  background-color: #fff;
+  color: rgb(209,67,74);
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.previousBtn:hover{
+  cursor: pointer;
+}
+.orderInfoRight{
+  width:40%;
+  height:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  font-size: 16px;
+  padding-right:10px;
+}
+.itemSubtotal,.shop,.discount,.tax{
+  opacity: 0.6;
+}
+.orderTotal{
+  color: rgb(209,67,74);
+  font-weight: bold;
+}
+.paymentBtn{
+  padding:10px 25px;
+  border:none;
+  background-color: rgb(209,67,74);
+  color: #fff;
+  font-size: 16px;
+}
+.paymentBtn:hover{
+  opacity: 0.8;
+  cursor: pointer;
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vuex—actions</title>
+    <script src="./../../node_modules/vue/dist/vue.js"></script>
+    <script src="./../../node_modules/vuex/dist/vuex.js"></script>
+</head>
+<body>
+  <div id="app">
+    <h2>{{msg}}</h2>
+    <button @click="replace">替换</button>
+    <counter></counter>
+  </div>
+  <script>
+    const counter = {
+      template:`<div>{{count+userName}}</div>`,
+      computed:{
+        count(){
+          return this.$store.state.count;
+        },
+        name(){
+          return this.$store.state.name;
+        },
+        userName(){
+          return this.$store.getters.userName;
+        }
+      }
+    };
+    const vuexStore = new Vuex.Store({
+      state:{
+        count:20,
+        name:"陈真"
+      },
+      getters:{
+        userName(state){
+          return state.name+'，你好帅！';
+        }
+      },
+      mutations:{
+        increment(state,num){
+          state.count = num;
+        },
+        updateName(state,newName){
+          state.name = newName;
+        }
+      },
+      actions:{
+        incrementAction(context){
+          context.commit("increment",200);
+        },
+        updateNameAction(context){
+          context.commit("updateName","刘雪飞");
+        }
+      }
+    });
+    new Vue({
+      el:"#app",
+      store:vuexStore,
+      data:{
+        msg:"Vue的使用"
+      },
+      components:{
+        counter
+      },
+      methods:{
+        replace(){
+          this.$store.dispatch("incrementAction");
+          this.$store.dispatch("updateNameAction");
+        }
+      }
+    });
+  </script>
+</body>
+</html>

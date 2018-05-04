@@ -1,0 +1,39 @@
+.statusMenu{
+  width:92%;
+  height:50px;
+  margin:0 auto;
+}
+.statusMenu ul{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.statusMenu ul li{
+  width:25%;
+  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+}
+.activeStatus{
+  border-bottom:2px solid rgb(209,67,74);
+  color:rgb(209,67,74);
+}
+.defaultStatus{
+  border-bottom:2px solid #ccc;
+}
+.statusCircle{
+  display:block;
+  width:15px;
+  height:15px;
+  border-radius: 50%;
+  position: relative;
+  bottom:-7.5px;
+}
+.activeCircle{
+  background-color: rgb(209,67,74);
+}
+.defaultCircle{
+  background-color: #ccc;
+}
